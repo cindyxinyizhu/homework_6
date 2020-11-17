@@ -58,10 +58,10 @@ document.querySelector("#volumeSlider").addEventListener("change", function() {
 	video.volume = this.value / 100;
 	console.log('After: ' + video.volume);
 
-	let volume = document.querySelector("#volumeSlider").innerHTML = "volume";
+	var currentVolume = this.value;
 
-    document.getElementById('volumeSlider').value;
 
+    document.querySelector("#volume").innerHTML = currentVolume + "%";
 
 	console.log("New volume is" + video.volume);
 });
