@@ -56,6 +56,7 @@ document.querySelector("#volumeSlider").addEventListener("change", function() {
 	console.log('Before: ' + video.volume);
 	video.volume = this.value / 100;
 	console.log('After: ' + video.volume);
+	let volumeSlider = document.querySelector("#volumeSlider").innerHTML = "volumeSlider"
 });
 
 document.querySelector("#old").addEventListener("click", function() {
